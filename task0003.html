@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task0003-个人任务管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/task0003.css">
+</head>
+
+
+<body>
+
+	<header>
+		<h1>GDT Tools</h1>
+	</header>
+
+	<div id="container">
+		
+		<div id="todoKinds">
+			<div class="flexbox">
+				<ul id="levelOne" class="flexinner" data-level="1">
+					<li><div class="notaddnew level1"><span>所有任务</span><span>(n)</span></div></li>
+					<li>
+						<div class="level1 firstNode"><span>分类列表</span></div>
+						<ul id="levelTwo" data-level="2">
+							<li>
+								<div id="defaultKind" class="notaddnew level2" style="background-color: white;"><span>默认分类</span><span>(n)</span></div>
+								<!-- <ul data-level="3">
+									<li><div class="level3">defaultTask</div></li>
+								</ul> -->
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div id="new-kind" class="new">
+				<img src="img\icon_add.png">
+				<span>新建分类</span>
+			</div>
+		</div
+		
+		><div id="todoList">
+			<div class="flexbox">
+				<div class="flexinner">
+					<div id="tL-header">
+						<span id="showALL" style="background-color: white;">所有</span>
+						<span id="unfinish">未完成</span>
+						<span id="finish">已完成</span>
+					</div>
+
+					<div id="tL-container">
+						<!-- <ul>
+							<li class="dateLi">2015-04-28</li>
+							<li class="todoLi">to-do 1</li>
+							<li class="todoLi">to-do 2</li>
+						</ul>
+						<ul>
+							<li class="dateLi">2015-04-29</li>
+							<li class="todoLi">to-do 3</li>
+							<li class="todoLi">to-do 4</li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="new-to-do" class="new">
+				<img src="img\icon_add.png">
+				<span>新建任务</span>
+			</div>
+		</div
+			
+		><div id="todoContent">
+			<div id="tC-header">
+				<span id="title"></span>
+				<div>
+					<a href="#" title="提交"><img id="submit" src="img/icon_submit.png"></a>
+					<a href="#" title="编辑"><img id="edit" src="img/icon_edit.png"></a>
+				</div>
+			</div>
+			<div id="date">
+				<span>任务日期：</span>
+				<span></span>
+			</div>
+			<div class="textarea">
+				<p style="display: block;"></p>
+				<textarea style="display: none;"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<footer></footer>
+
+
+
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/task0003.js"></script>
+
+</body>
+</html>
